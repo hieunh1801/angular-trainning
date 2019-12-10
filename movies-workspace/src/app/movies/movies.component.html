@@ -1,0 +1,18 @@
+<h1>Movie's detail</h1>
+<div> <span>id: </span>{{movie.id}}</div>
+<div> <span>Name: </span>{{ movie.name | uppercase }}</div>
+<div> <span>Release year: </span>{{movie.releaseYear}}</div>
+
+
+<h2>Enter infomation</h2>
+<div style="margin: 10px; text-align: left;">
+  <label> Movie name: (one way databinding)
+    <input [ngModel]="movie.name" placeholder="Enter movie'name">
+  </label>
+</div>
+
+<div style="margin: 10px; text-align: left;">
+  <label> Release year: (two way databinding)
+    <input [(ngModel)]="movie.releaseYear" placeholder="Enter release year">
+  </label>
+</div>

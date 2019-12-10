@@ -1,27 +1,30 @@
 # MoviesWorkspace
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+## Question
+- Hiển thị dữ liệu từ component (.ts) qua template (.html)
 
-## Development server
+- Hiển thị một object từ component qua template
+    - Cách khai báo một object: dùng class hoặc interface
+    - Tạo một object từ class
+    - Hiển thị như bình thường
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- __Pie__ - handle dữ liệu hiển thị ra 
+    - Kết quả của vế trái là parameter của vế phải
 
-## Code scaffolding
+- __Component__ là gì
+    - Khai báo và sử dụng component
+    - __decorator__: khai báo các metadatass
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- __Data binding__
+    - dữ liệu được bind vào trong input
+    - one way binding: dữ liệu hiển thị ra form input và không bị thay đổi khi sửa
+    - two way binding: dữ liệu vừa bind ra form input và bị thay đổi khi sửa
+    - cách dùng: sử dụng __directive__
+        - __[ngModel] :__ truyền dữ liệu
+        - __(ngModel):__ truyền hàm
+        - __[(ngModel)]:__ truyền cả hàm cả dữ liệu
+    - chú ý:
+        - phải import module __FormModule__ để sử dụng được các __directive__ trên
+    - Tìm hiểu thêm về directive https://viblo.asia/p/directive-trong-angularjs-naQZRYWXKvx
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Hiển thị một danh sách các movies sử dụng __directive__ *ngFor

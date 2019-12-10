@@ -1,0 +1,31 @@
+{
+  "generator-ngx-rocket": {
+    "version": "7.1.0",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "appName": "ngx rocket heros workspace",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "material",
+      "layout": "side-menu",
+      "auth": true,
+      "lazy": true,
+      "angulartics": false,
+      "tools": [],
+      "utility": [
+        "lodash",
+        "moment"
+      ],
+      "projectName": "ngx-rocket-heros-workspace",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}

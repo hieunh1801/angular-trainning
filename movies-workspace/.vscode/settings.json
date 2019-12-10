@@ -1,0 +1,38 @@
+{
+  /* Suggestion -----------------------------------------------------------------*/
+  // Mở suggestion ngay sau khi gõ
+  "editor.quickSuggestionsDelay": 1,
+
+  // Controls if quick suggestions should show up while typing
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  // Complete bằng cách ấn tab
+  "editor.tabCompletion": "on",
+
+  // Enable word based suggestions
+  "editor.wordBasedSuggestions": false,
+
+  "editor.suggest.localityBonus": true,
+
+  // Sử dụng các lựa chọn gần đây
+  "editor.suggestSelection": "recentlyUsed",
+
+  // Không sử dụng snippet suggetion
+  "editor.snippetSuggestions": "bottom",
+  /* Import ----------------------------------------------------------*/
+  "editor.codeActionsOnSave": {
+    // Tự động sort lại thứ tự import
+    "source.organizeImports": false
+  },
+
+
+  /* FONT --------------------------------------------------------------------------*/
+  "editor.fontFamily": "Inconsolata",
+
+  "editor.fontSize": 18,
+  "editor.tabSize": 2,
+
+}
