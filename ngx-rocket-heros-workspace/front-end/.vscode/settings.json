@@ -1,0 +1,8 @@
+{
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.fontFamily": "Inconsolata",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "500",
+  "editor.cursorStyle": "line",
+  "editor.renderWhitespace": "all",
+}

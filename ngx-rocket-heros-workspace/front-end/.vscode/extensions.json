@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "angular.ng-template",
+    "hookyqr.beautify",
+    "mhutchie.git-graph",
+    "abusaidm.html-snippets",
+    "zignd.html-css-class-completion",
+    "esbenp.prettier-vscode",
+    "visualstudioexptteam.vscodeintellicode",
+    "mikael.angular-beastcode"
+  ]
+}

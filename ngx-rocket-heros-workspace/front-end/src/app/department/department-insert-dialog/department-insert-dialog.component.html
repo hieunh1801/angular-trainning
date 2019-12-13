@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Thêm phòng ban mới</h1>
+<div mat-dialog-content>
+  <form class="department-form-container" [formGroup]="rfDepartment" novalidate (ngSubmit)="addDepartment()">
+    <!-- Code -->
+    <mat-form-field class="form-group" style="width: 100%;">
+      <mat-label>Code</mat-label>
+      <input matInput formControlName="code">
+    </mat-form-field>
+
+    <!-- Tên phòng ban -->
+    <mat-form-field class="form-group" style="width: 100%;">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+
+    <!-- Lựa chọn trạng thái -->
+    <mat-form-field class="form-group" style="width: 100%;">
+      <mat-label>Trạng thái</mat-label>
+      <mat-select formControlName="status">
+        <mat-option value="1" disable> Active </mat-option>
+        <mat-option value="0" disable> Deactive </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </form>
+</div>
+<div mat-dialog-actions style="width: 100%; display: flex; justify-content: flex-end;">
+  <button mat-stroked-button (click)="onNoClick()">No Thanks</button>
+  <button color="primary" mat-raised-button (click)="addDepartment()">Add department</button>
+</div>

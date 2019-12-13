@@ -1,7 +1,7 @@
 <div fxFlex>
   <mat-sidenav-container fxFill>
     <mat-sidenav #sidenav [mode]="isMobile ? 'over' : 'side'" [opened]="!isMobile" [disableClose]="!isMobile"
-                 ngClass.gt-sm="has-border">
+      ngClass.gt-sm="has-border">
       <mat-toolbar color="primary">
         <span translate>APP_NAME</span>
         <div fxFlex></div>
@@ -16,29 +16,23 @@
               </mat-list-item>
               <mat-divider></mat-divider>
             </mat-list>
-            <button mat-menu-item (click)="logout()" translate>Logout</button>
-          </mat-menu>
-        </div>
-        <div>
-          <button mat-icon-button [matMenuTriggerFor]="languageMenu">
-            <mat-icon>language</mat-icon>
-          </button>
-          <mat-menu #languageMenu="matMenu">
-            <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
-              {{language}}
-            </button>
+            <button mat-menu-item (click)="logout()">Logout</button>
           </mat-menu>
         </div>
       </mat-toolbar>
       <nav>
         <mat-list>
           <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+          <a mat-list-item routerLink="/home" routerLinkActive="active">
             <span translate>Home</span>
           </a>
           <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/about" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+          <a mat-list-item routerLink="/about" routerLinkActive="active">
             <span translate>About</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/department" routerLinkActive="active">
+            <span translate>Department</span>
           </a>
           <mat-divider></mat-divider>
         </mat-list>
@@ -54,4 +48,7 @@
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
+
+
+
 </div>
